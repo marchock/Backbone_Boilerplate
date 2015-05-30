@@ -1,0 +1,20 @@
+
+.footer {
+    background-color: #CCC;
+
+    .navigation {
+        @extend .base-width;
+        padding: 10px 20px;
+
+        ul {
+            li {
+                list-style-type: none;
+            }
+        }
+
+        > a {
+            @include font(18, 22);
+            padding: 10px 40px;
+        }
+    }
+}

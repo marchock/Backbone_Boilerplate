@@ -1,0 +1,11 @@
+.page-pictures {
+    @extend .base-width;
+    padding: 10px 20px;
+    background-color: #EEE;
+
+    ul {
+        > li {
+            list-style: none;
+        }
+    }
+}

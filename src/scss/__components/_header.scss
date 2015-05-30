@@ -1,0 +1,34 @@
+/**
+ * @group css.components.headers.header-global
+ *
+ * Top global header styles
+ *
+ * ## Usage
+ * Import into your main file using
+ *
+ * @example
+ *     @import "__components/__headers/header-global";
+ *
+ */
+
+.header {
+    background-color: #CCC;
+
+    .navigation{
+        @extend .base-width;
+
+        > a {
+            @include font(18, 22);
+            padding: 10px 40px;
+            float: left;
+
+            &.active {
+                color: red;
+            }
+
+            &:hover {
+                background-color: #AAA;
+            }
+        }
+    }
+}
